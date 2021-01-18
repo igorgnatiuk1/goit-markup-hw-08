@@ -290,7 +290,7 @@ img {
 }
 
 .container {
-  width: 1200px;
+  width: 100%;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
@@ -448,7 +448,7 @@ nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 270px;
+  width: 100%;
   height: 120px;
   margin-bottom: 30px;
   -webkit-box-align: center;
@@ -461,25 +461,27 @@ nav {
 }
 
 .info .container ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
 
 .info .container li {
-  width: 270px;
+  width: 100%;
+}
+
+.info .container li:not(:last-child) {
+  margin-bottom: 30px;
 }
 
 .info {
-  padding-top: 94px;
-  padding-bottom: 47px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .container h3 {
   margin-bottom: 10px;
+  text-align: center;
 }
 
 .portfolio {

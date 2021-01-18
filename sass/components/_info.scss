@@ -1,6 +1,6 @@
 .container .div-info{
     display: flex;
-    width: 270px;
+    width: 100%;
     height: 120px;
     margin-bottom: 30px;
     align-items: center;
@@ -8,16 +8,35 @@
     background-color: #F5F4FA;
     }
     .info .container ul{
-        display: flex;
         justify-content: space-between;
+        @media screen and (min-width: 768px) {
+            // display: flex;
+            // flex-wrap: wrap;  
+            // margin-left: -30px;
+            // margin-top: -30px;
+          }
     }
     .info .container li{
-        width: 270px;
+        width: 100%;
+    &:not(:last-child){
+        margin-bottom: 30px;
+    //     @media screen and (min-width: 768px) {
+    //     margin-bottom: unset;
+        
+        }
+
+    // }
+    // @media screen and (min-width: 768px) {
+    //     width: 354px;  
+    //     margin-left: 30px;
+    //     margin-top: 30px;
+    // }
     }
     .info{
-    padding-top: 94px;
-    padding-bottom: 47px;
+    padding-top: 60px;
+    padding-bottom: 60px;
     }
     .container h3{
     margin-bottom: 10px;
+    text-align: center;
     }
