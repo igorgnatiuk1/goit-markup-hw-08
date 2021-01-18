@@ -1,0 +1,114 @@
+.address-nav{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    color: var(--color-wight);
+    }
+    .address-list{
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.71;
+        color: var(--color-gray-transparent);
+        text-decoration: none;
+        transition-property: color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        &:focus, &:hover{
+            color: var(--color-blue);
+            }
+        
+    }
+    
+    .address-nav :not(:last-child){
+        margin-bottom: 9px;
+    }
+footer{
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background: #2F303A;
+        
+        
+    }
+    .footer-a{
+        margin-bottom: 20px;
+        display: inline-block;
+    }
+.footer-item{
+    display: flex;
+    justify-content: space-between;
+}
+.footer-item2{
+    display: flex;
+   justify-content: center; }
+
+.footer-item2 li:not(:last-child){
+       margin-right: 10px; }
+
+.footer-list a{
+       display: inline-flex;
+       width: 44px;
+       height: 44px;
+        border-radius: 50%;
+       justify-content: center;
+       align-items: center;
+       fill: white;
+       background-color: rgba(255, 255, 255, 0.1);
+       transition-property: background-color;
+transition-duration: 250ms;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+&:hover, &:focus{
+    background-color: #2196F3;
+}
+   }
+.footer-item b{
+display: block;
+font-weight: 700;
+font-size: 14px;
+line-height: 1.14;
+color: var(--color-wight);
+margin-bottom: 20px;
+}
+.footer-input label{
+font-weight: 700;
+font-size: 14px;
+line-height: 1.14;
+margin-bottom: 20px;
+color: #fff;
+}
+.footer-input input{
+width: 358px;
+height: 50px;
+padding-left: 16px;
+margin-right: 12px;
+border: 1px solid rgba(255, 255, 255, 0.3);
+box-sizing: border-box;
+filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+border-radius: 4px;
+background: #2F303A;
+color: #fff;
+}
+.footer-input input::placeholder{
+font-weight: 400;
+font-size: 16px;
+line-height: 1.25;
+}
+.footer-input button{
+position: relative;
+width: 200px;
+height: 50px;
+background: #2196F3;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+border-radius: 4px;
+font-weight: 700;
+font-size: 16px;
+line-height: 1.87;
+color: #fff;
+padding-right: 30px;
+
+}
+.footer-input svg{
+position: absolute;
+top: 13px;
+right: 28px;
+
+}

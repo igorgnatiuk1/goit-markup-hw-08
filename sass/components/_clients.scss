@@ -1,0 +1,41 @@
+.client{
+    text-align: center;}
+
+.client-h2{
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    margin-bottom: 50px;
+}
+.client-item{
+    display: flex;
+    display: inline-flex;
+}
+.client{
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+.client-item a{
+    display: flex;
+    width: 170px;
+    height: 90px;
+    border: 1px solid #AFB1B8;
+    box-sizing: border-box;
+    border-radius: 4px;
+    align-items: center;
+    justify-content: center;
+    color:  #AFB1B8;
+    transition-property: color, border;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover, &:focus{
+        color: var(--color-blue);
+        border: 1px solid var(--color-blue); }
+}
+
+.client-item svg{
+    fill: currentColor;
+}
+.client-item li:not(:last-child){
+margin-right: 30px;    
+}

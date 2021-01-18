@@ -1,0 +1,110 @@
+.portfolio{
+    display: flex;
+padding-top: 94px;
+padding-bottom: 94px;
+}
+.portfolio-but{
+display: flex;
+justify-content: center;
+margin-bottom: 50px;
+}
+.portfolio-but :not(:last-child){
+margin-right: 8px;
+}
+.list-li{
+margin-right: 30px;
+margin-bottom: 30px;
+&:focus, &:hover{
+   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+   }
+&:hover .card-info{
+   opacity: 1;
+   transform: translateY(0%);
+   }
+}
+.list-li{
+transition-property: box-shadow;
+transition-duration: 250ms;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); 
+}
+.list-all{
+margin-right: -30px;
+margin-bottom: -30px;
+}
+.content{
+width: 370px;
+height: 120px;
+padding: 20px 24px;
+background: #FFFFFF;
+border-right: 1px solid #EEEEEE;
+border-left: 1px solid #EEEEEE;
+border-bottom: 1px solid #EEEEEE;
+}
+
+.button-nav{
+font-weight: 500;
+font-size: 16px;
+line-height: 1.62;
+background-color:  #F5F4FA;
+color: var(--color-black);
+letter-spacing: 0.03em;
+padding: 6px 22px;
+border-radius: 4px;
+transition-property: color, background-color ;
+transition-duration: 250ms;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+&:hover, &:focus{
+   background-color: var(--color-blue);
+   color: var(--color-wight);
+   }
+}
+.button-nav li{
+background-color: var(--color-blue);
+color: var(--color-wight);
+
+}
+.list-all{
+display: flex;
+flex-wrap: wrap;
+}
+
+.list-all h3{
+font-weight: 700;
+font-size: 18px;
+line-height: 2;
+letter-spacing: 0.06em;
+}
+
+.list-all p{
+font-weight: 400;
+font-size: 16px;
+line-height: 1.87;
+color: var(--color-gray);}
+.command{
+margin-bottom: 50px;
+}
+.card-all{
+   position: relative;
+   overflow: hidden;
+}
+.card-all .card-info{
+   font-weight: 400;
+   font-style: 18px;
+   line-height: 1.55;
+   color: #fff;
+   background: rgba(33, 150, 243, 0.9);
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   top: 0;
+   left: 0;
+   right: 0;
+   display: flex;
+   padding-left: 12px;
+   align-items: center;
+   transform: translateY(100%);
+   opacity: 0;
+   transition: transform 250ms, opacity 250ms;
+   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+   
+}
