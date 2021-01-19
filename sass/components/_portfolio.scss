@@ -1,19 +1,27 @@
 .portfolio{
-    display: flex;
-padding-top: 94px;
-padding-bottom: 94px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    @media screen and (min-width: 1200px){
+   padding-top: 94px;
+   padding-bottom: 94px;  
+    }
 }
 .portfolio-but{
 display: flex;
-justify-content: center;
+flex-wrap: wrap;
 margin-bottom: 50px;
+@media screen and (min-width: 768px) {
+   justify-content: center;}
+& li{
+margin-bottom: 15px;
+@media screen and (min-width: 768px) {
+   margin-bottom: unset;}
+}
 }
 .portfolio-but :not(:last-child){
 margin-right: 8px;
 }
 .list-li{
-margin-right: 30px;
-margin-bottom: 30px;
 &:focus, &:hover{
    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
    }
@@ -21,19 +29,19 @@ margin-bottom: 30px;
    opacity: 1;
    transform: translateY(0%);
    }
+   &:not(:last-child){
+      margin-bottom: 30px;
+      @media screen and (min-width: 768px) {
+      margin-bottom: unset; }
+  }
 }
 .list-li{
 transition-property: box-shadow;
 transition-duration: 250ms;
 transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); 
 }
-.list-all{
-margin-right: -30px;
-margin-bottom: -30px;
-}
 .content{
-width: 370px;
-height: 120px;
+width: 100%;
 padding: 20px 24px;
 background: #FFFFFF;
 border-right: 1px solid #EEEEEE;
@@ -63,16 +71,12 @@ background-color: var(--color-blue);
 color: var(--color-wight);
 
 }
-.list-all{
-display: flex;
-flex-wrap: wrap;
-}
-
 .list-all h3{
 font-weight: 700;
 font-size: 18px;
 line-height: 2;
 letter-spacing: 0.06em;
+text-align: left;
 }
 
 .list-all p{
@@ -86,6 +90,9 @@ margin-bottom: 50px;
 .card-all{
    position: relative;
    overflow: hidden;
+   & img{
+      width: 100%;
+   }
 }
 .card-all .card-info{
    font-weight: 400;
@@ -107,4 +114,22 @@ margin-bottom: 50px;
    transition: transform 250ms, opacity 250ms;
    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
    
+}
+.list-all li{
+   width: 100%;
+   @media screen and (min-width: 768px) {
+      width: 354px;
+      margin-left: 30px;
+      margin-top: 30px;}
+  @media screen and (min-width: 1200px) {
+      width: 370px;}
+}
+
+.list-all{
+   @media screen and (min-width: 768px) {
+      display: flex;
+      flex-wrap: wrap;  
+      margin-left: -30px;
+      margin-top: -30px;
+    }
 }
