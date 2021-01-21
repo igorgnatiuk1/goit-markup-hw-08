@@ -217,7 +217,7 @@
 
     </section>
     </main>
-    <!-- <footer>
+    <footer>
         <div class="container"> 
        <ul class="footer-item">
            <li class="margin"><a href="" class="footer-a"><img src="./images/web.svg" alt="логотип"></a>
@@ -228,7 +228,7 @@
                     <li><a href="" class="address-list">+38 099 111 11 11</a></li>
                 </ul>
           </li>
-          <li>
+          <li class="footer-icons">
               <b>ПРИСОЕДИНЯЙТЕСЬ</b>
               <ul class="footer-item2">
                 <li class="footer-list"> <a href=""><svg width="20px" height="20px">
@@ -256,14 +256,14 @@
             </svg></button>
           </li>
         </ul>   </div>
-</footer> -->
+</footer>
 <div class="backdrop is-hidden" data-modal>
     <div class="modal">
         <button data-modal-close> <svg width="30px" height="30px" class="close">
             <use href="./images/symbol-defs.svg#close"></use>
         </svg></button>
         <form action="#" class="form-modal">
-            <b>Оставьте свои данные, мы вам перезвоним</b>
+            <p>Оставьте свои данные, мы вам перезвоним</p>
             <label for="name">Имя</label>
         <div class="form-div">
             <input id="name" type="text" name="name" class="input">
@@ -288,18 +288,22 @@
                 <use href="./images/symbol-defs.svg#icon-email"></use>
             </svg>
         </div>
+        <div class="form-div">
             <label for="comment">Коментарий</label>
             <textarea name="comment" id="comment" cols="30" rows="10" placeholder="Введите текст" class="textarea"></textarea>
+        </div>
         <div class="checkbox">
             <label>
             <input type="checkbox" name="checkbox" id="checkbox">
             <span class="checkbox-span"></span>
-            Соглашаюсь с рассылкой и принимаю</label><a href="">Условия договора</a>
+            Соглашаюсь с рассылкой и принимаю <a href="">Условия договора</a></label>
         </div>
         <button>Отправить</button>
         </form>
+      
     </div>
 </div>
+
 <script src="./js/modal.js"></script>
 </body>
 </html>
