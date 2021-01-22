@@ -389,6 +389,7 @@ ul {
 }
 
 .menu-container {
+  z-index: 1;
   display: none;
   position: absolute;
   top: 100%;
@@ -558,15 +559,29 @@ ul {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .portfo {
+    position: relative;
+  }
+}
+
 .portfo::after {
   display: block;
-  position: absolute;
   content: "";
   width: 77px;
   height: 4px;
   background: #2196F3;
   border-radius: 2px;
-  margin-top: 25px;
+  margin-top: 8px;
+}
+
+@media screen and (min-width: 768px) {
+  .portfo::after {
+    margin-top: unset;
+    position: absolute;
+    left: 0;
+    top: 41px;
+  }
 }
 
 nav {
