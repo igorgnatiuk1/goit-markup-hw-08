@@ -17,10 +17,10 @@
     padding: 0;
     background-color:transparent;
     border: none;
-    & .icon-cross {
+    & .icon-close {
         display: none;
     }
-    &.is-open .icon-cross{
+    &.is-open .icon-close{
         display: block;
     }
     &.is-open .icon-menu{
@@ -31,7 +31,7 @@
     }
     
 }
-.icon-cross:hover{
+.icon-close:hover{
     fill: #2196F3;
 
 }

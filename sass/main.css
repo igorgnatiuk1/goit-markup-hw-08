@@ -344,11 +344,11 @@ ul {
   border: none;
 }
 
-.header-button .icon-cross {
+.header-button .icon-close {
   display: none;
 }
 
-.header-button.is-open .icon-cross {
+.header-button.is-open .icon-close {
   display: block;
 }
 
@@ -362,7 +362,7 @@ ul {
   }
 }
 
-.icon-cross:hover {
+.icon-close:hover {
   fill: #2196F3;
 }
 
