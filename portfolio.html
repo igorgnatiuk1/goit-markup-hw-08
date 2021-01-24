@@ -8,49 +8,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
 </head>
 <body class="body">
-    <!-- <header class="header">
-        <div class="container" >
-            <a href="./index.html" class="nav-a"><img src="./images/WebStudio.svg" alt="логотип"></a>
-                <button type="button" class="header-button is-open"
-                data-menu-button>
-                <svg width="40px" height="40px"
-                    aria-label="мобильное меню">
-                    <use class="icon-cross" href="./images/symbol-defs.svg#icon-menu"></use>
-                    <use class="icon-menu" href="./images/symbol-defs.svg#icon-close"></use>
-                </svg></button>
-                <div class="menu-container" data-menu>
-                <div class="navigations">
-                    
-                <nav>
-                <ul class="ul">
-                <li><a href="./index.html">Студия</a></li>
-                <li><a href="./portfolio.html" class="portfo">Портфолио</a></li>
-                <li><a href="">Контакты</a></li>
-                </ul>
-                
-            </nav>
-               
-               <ul class="address">
-                     <li class="address-li">
-                        
-                        <a href=""><svg width="16px" height="12px">
-                            <use href="./images/sprite.svg#icon-envelope"></use>
-                        </svg> info@destudio.com</a></li>
-                        
-                     <li><a href=""><svg width="10px" height="16px">
-                         <use href="./images/sprite.svg#icon-phone"></use>
-                     </svg>+38 096 111 11 11</a>
-                    </li>
-                 </ul>
-                </div>
-            </div> 
-        </div>
-    </header> -->
-    <!-- ul class="ul">
-                <li><a href="./index.html">Студия</a></li>
-                <li><a href="./portfolio.html" class="portfo">Портфолио</a></li>
-                <li><a href="">Контакты</a></li>
-                </ul> -->
                 <header class="header">
                     <div class="container" >
                         
@@ -105,7 +62,12 @@
             <ul class="list-all">
                 <li class="list-li">
                     <div class="card-all">
-                        <img src="./images/Технокряк.jpg" alt=" Ноутбук">
+                        <picture>
+                            <source srcset="./images/jpeg/tehnokriak_mobile.jpg 1x, ./images/jpeg/tehnokriak_mobile2x.jpg 2x" media="(max-width:767px") />
+                            <source srcset="./images/jpeg/tehnokriak_tablet.jpg 1x, ./images/jpeg/tehnokriak_tablet2x.jpg 2x" media="(max-width:1199px") />
+                            <source srcset="./images/jpeg/tehnokriak_dekstop.jpg 1x, ./images/jpeg/tehnokriak_dekstop2x.jpg 2x" media="(min-width:1200px") />
+                            <img src="./images/jpeg/tehnokriak_dekstop.jpg" alt="Ноутбук">    
+                        </picture>
                         <p class="card-info">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p></div>
                     <div class="content">
 
@@ -115,7 +77,12 @@
                 </li>
                 <li class="list-li">
                     <div class="card-all">
-                        <img src="./images/Постер.jpg" alt=" Постер New Orlean vs Golden Star ">
+                        <picture>
+                            <source srcset="./images/jpeg/golden_mobile.jpg 1x, ./images/jpeg/golden_mobile2x.jpg 2x" media="(max-width:767px") />
+                            <source srcset="./images/jpeg/golden_tablet.jpg 1x, ./images/jpeg/golden_tablet2x.jpg 2x" media="(max-width:1199px") />
+                            <source srcset="./images/jpeg/golden_dekstop.jpg 1x, ./images/jpeg/golden_dekstop2x.jpg 2x" media="(min-width:1200px") />
+                            <img src="./images/jpeg/golden_dekstop.jpg" alt="Постер New Orlean vs Golden Star">    
+                        </picture>
                         <p class="card-info">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p></div>
                     <div class="content">
 
@@ -125,7 +92,12 @@
                     </li>
                 <li class="list-li">
                     <div class="card-all">
-                        <img src="./images/Ресторан.jpg" alt=" Логотип ресторана">
+                        <picture>
+                            <source srcset="./images/jpeg/seafood_mobile.jpg 1x, ./images/jpeg/seafood_mobile2x.jpg 2x" media="(max-width:767px") />
+                            <source srcset="./images/jpeg/seafood_tablet.jpg 1x, ./images/jpeg/seafood_tablet2x.jpg 2x" media="(max-width:1199px") />
+                            <source srcset="./images/jpeg/seafood_dekstop.jpg 1x, ./images/jpeg/seafood_dekstop2x.jpg 2x" media="(min-width:1200px") />
+                            <img src="./images/jpeg/seafood_dekstop.jpg" alt="Логотип ресторана">    
+                        </picture>
                         <p class="card-info">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p></div>
                     <div class="content">
 
@@ -136,7 +108,12 @@
                 
                 <li class="list-li">
                     <div class="card-all">
-                        <img src="./images/Проект Прайм.jpg" alt=" Наушники">
+                        <picture>
+                            <source srcset="./images/jpeg/prime_mobile.jpg 1x, ./images/jpeg/prime_mobile2x.jpg 2x" media="(max-width:767px") />
+                            <source srcset="./images/jpeg/prime_tablet.jpg 1x, ./images/jpeg/prime_tablet2x.jpg 2x" media="(max-width:1199px") />
+                            <source srcset="./images/jpeg/prime_dekstop.jpg 1x, ./images/jpeg/prime_dekstop2x.jpg 2x" media="(min-width:1200px") />
+                            <img src="./images/jpeg/prime_dekstop.jpg" alt="Наушники">    
+                        </picture>
                         <p class="card-info">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p></div>
                     <div class="content">
 
@@ -146,7 +123,12 @@
                     </li>
                 <li class="list-li">
                     <div class="card-all">
-                        <img src="./images/Проект Бокс.jpg" alt=" Две коробки">
+                        <picture>
+                            <source srcset="./images/jpeg/boxes_mobile.jpg 1x, ./images/jpeg/boxes_mobile2x.jpg 2x" media="(max-width:767px") />
+                            <source srcset="./images/jpeg/boxes_tablet.jpg 1x, ./images/jpeg/boxes_tablet2x.jpg 2x" media="(max-width:1199px") />
+                            <source srcset="./images/jpeg/boxes_dekstop.jpg 1x, ./images/jpeg/boxes_dekstop2x.jpg 2x" media="(min-width:1200px") />
+                            <img src="./images/jpeg/boxes_dekstop.jpg" alt="Две коробки">    
+                        </picture>
                         <p class="card-info">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p></div>
                     <div class="content">
                         <h3>Проект Boxes</h3>
@@ -155,7 +137,12 @@
                 </li>
                 <li class="list-li">
                     <div class="card-all">
-                        <img src="./images/Інспірейшн.jpg" alt=" Экран компьютера">
+                        <picture>
+                            <source srcset="./images/jpeg/inspiration_mobile.jpg 1x, ./images/jpeg/inspiration_mobile2x.jpg 2x" media="(max-width:767px") />
+                            <source srcset="./images/jpeg/inspiration_tablet.jpg 1x, ./images/jpeg/inspiration_tablet2x.jpg 2x" media="(max-width:1199px") />
+                            <source srcset="./images/jpeg/inspiration_dekstop.jpg 1x, ./images/jpeg/inspiration_dekstop2x.jpg 2x" media="(min-width:1200px") />
+                            <img src="./images/jpeg/inspiration_dekstop.jpg" alt="Экран компьютера">    
+                        </picture>
                         <p class="card-info">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p></div>
                     <div class="content">
                     <h3>Inspiration has no Borders</h3>
@@ -164,7 +151,12 @@
                 </li>
                 <li class="list-li">
                     <div class="card-all">
-                        <img src="./images/Издание.jpg" alt=" Дизайн страниц журнала">
+                        <picture>
+                            <source srcset="./images/jpeg/limited_mobile.jpg 1x, ./images/jpeg/limited_mobile2x.jpg 2x" media="(max-width:767px") />
+                            <source srcset="./images/jpeg/limited_tablet.jpg 1x, ./images/jpeg/limited_tablet2x.jpg 2x" media="(max-width:1199px") />
+                            <source srcset="./images/jpeg/limited_dekstop.jpg 1x, ./images/jpeg/limited_dekstop2x.jpg 2x" media="(min-width:1200px") />
+                            <img src="./images/jpeg/limited_dekstop.jpg" alt="Дизайн страниц журнала">    
+                        </picture>
                         <p class="card-info">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p></div>
                     <div class="content">
                     <h3>Издание Limited Edition</h3>
@@ -173,7 +165,12 @@
                 </li>
                 <li class="list-li">
                     <div class="card-all">
-                        <img src="./images/Проект.jpg" alt=" Этикетка проекта">
+                        <picture>
+                            <source srcset="./images/jpeg/lab_mobile.jpg 1x, ./images/jpeg/lab_mobile2x.jpg 2x" media="(max-width:767px") />
+                            <source srcset="./images/jpeg/lab_tablet.jpg 1x, ./images/jpeg/lab_tablet2x.jpg 2x" media="(max-width:1199px") />
+                            <source srcset="./images/jpeg/lab_dekstop.jpg 1x, ./images/jpeg/lab_dekstop2x.jpg 2x" media="(min-width:1200px") />
+                            <img src="./images/jpeg/lab_dekstop.jpg" alt="Этикетка проекта">    
+                        </picture>
                         <p class="card-info">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p></div>
                     <div class="content">
                     <h3>Проект LAB</h3>
@@ -182,7 +179,12 @@
                 </li>
                 <li class="list-li">
                     <div class="card-all">
-                        <img src="./images/Гровінг.jpg" alt=" Приложение на ноутбуке">
+                        <picture>
+                            <source srcset="./images/jpeg/business_mobile.jpg 1x, ./images/jpeg/business_mobile2x.jpg 2x" media="(max-width:767px") />
+                            <source srcset="./images/jpeg/business_tablet.jpg 1x, ./images/jpeg/business_tablet2x.jpg 2x" media="(max-width:1199px") />
+                            <source srcset="./images/jpeg/business_dekstop.jpg 1x, ./images/jpeg/business_dekstop2x.jpg 2x" media="(min-width:1200px") />
+                            <img src="./images/jpeg/business_dekstop.jpg" alt="Приложение на ноутбуке">    
+                        </picture>
                         <p class="card-info">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p></div>
                     <div class="content">
                     <h3>Growing Business</h3>
@@ -204,7 +206,7 @@
                     <li><a href="" class="address-list">+38 099 111 11 11</a></li>
                 </ul>
           </li>
-          <li>
+          <li class="footer-icons">
               <b>ПРИСОЕДИНЯЙТЕСЬ</b>
               <ul class="footer-item2">
                 <li class="footer-list"> <a href=""><svg width="20px" height="20px">

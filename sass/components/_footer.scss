@@ -2,7 +2,7 @@
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
-    color: var(--color-wight);
+    color: $color-wight;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -14,13 +14,13 @@
         font-weight: 400;
         font-size: 14px;
         line-height: 1.71;
-        color: var(--color-gray-transparent);
+        color: $color-gray-transparent;
         text-decoration: none;
         transition-property: color;
         transition-duration: 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
         &:focus, &:hover{
-            color: var(--color-blue);
+            color: $color-blue;
             }
         
     }
@@ -76,7 +76,7 @@ display: block;
 font-weight: 700;
 font-size: 14px;
 line-height: 1.14;
-color: var(--color-wight);
+color: $color-wight;
 margin-bottom: 20px;
 @media screen and (min-width: 1200px) {
 text-align: left;

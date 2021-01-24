@@ -99,9 +99,24 @@
     <div class="container">
         <h2 class="tasks" >Чем мы занимаемся</h2>
         <ul class="tasks-ul">
-            <li><img src="./images/comp.jpg" alt="работа за компьютером"> <p class="overflov">Десктопные приложения</p></li>
-            <li><img src="./images/phone.jpg" alt="работа за телефоном"> <p class="overflov">Мобильные приложения</p></li>
-            <li><img src="./images/tablet.jpg" alt="работа за планшетом"> <p class="overflov">Дизайнерские решения</p></li>
+            <li>
+                <picture>
+                    <source srcset="./images/jpeg/comp_dekstop.jpg 1x, ./images/jpeg/comp_dekstop2x.jpg 2x" media="(min-width:1200px") />
+                    <img src="./images/jpeg/comp_dekstop.jpg" alt="работа за компьютером"> <p class="overflov">Десктопные приложения</p>
+                </picture>
+                </li>
+            <li>
+                <picture>
+                    <source srcset="./images/jpeg/telephone_dekstop.jpg 1x, ./images/jpeg/telephone_dekstop2x.jpg 2x" media="(min-width:1200px") />
+                    <img src="./images/jpeg/telephone_dekstop.jpg" alt="работа за телефоном"> <p class="overflov">Мобильные приложения</p>
+                </picture>
+                </li>
+            <li>
+                <picture>
+                    <source srcset="./images/jpeg/tablet_dekstop.jpg 1x, ./images/jpeg/tablet_dekstop2x.jpg 2x" media="(min-width:1200px") />
+                    <img src="./images/jpeg/tablet_dekstop.jpg" alt="работа за планшетом"> <p class="overflov">Дизайнерские решения</p></li>
+                </picture>
+                
         </ul>
     </div>
 
@@ -110,7 +125,15 @@
         <div class="container">
         <h2 class="command">Наша команда</h2>
         <ul class="list">
-            <li class="command-people"><img src="./images/img.jpg" alt="Игорь Демьяненко" width="270">
+            <li class="command-people">
+                <picture>
+                    <source srcset="./images/jpeg/igor_mobile.jpg 1x, ./images/jpeg/igor_mobile@2x.jpg 2x" media="(max-width:767px") />
+                    <source srcset="./images/jpeg/igor_tablet.jpg 1x, ./images/jpeg/igor_tablet2x.jpg 2x" media="(max-width:1199px") />
+                    <source srcset="./images/jpeg/igor_dekstop.jpg 1x, ./images/jpeg/igor_dekstop2x.jpg 2x" media="(min-width:1200px") />
+                    
+                    <img src="./images/jpeg/igor_dekstop.jpg" alt="Игорь">
+                    
+                </picture>
                  <h3>Игорь Демьяненко</h3>
                  <p>Product Designer</p>
                  <ul class="ul-2">
@@ -132,7 +155,13 @@
                      </li>
                      </ul>
                 </li>
-            <li class="command-people"><img src="./images/Ольга Репина.jpg" alt="Ольга Репина" width="270">
+            <li class="command-people">
+                <picture>
+                    <source srcset="./images/jpeg/olena_mobile.jpg 1x, ./images/jpeg/olena_mobile@2x.jpg 2x" media="(max-width:767px") />
+                    <source srcset="./images/jpeg/olena_tablet.jpg 1x, ./images/jpeg/olena_tablet2x.jpg 2x" media="(max-width:1199px") />
+                    <source srcset="./images/jpeg/olena_dekstop.jpg 1x, ./images/jpeg/olena_dekstop2x.jpg 2x" media="(min-width:1200px") />
+                    <img src="./images/jpeg/olena_dekstop.jpg" alt="Олена">     
+                </picture>
                 <h3>Ольга Репина</h3>
                 <p>Frontend Developer</p>
                 <ul class="ul-2">
@@ -154,7 +183,13 @@
                     </li>
                     </ul>
           </li>
-             <li class="command-people"><img src="./images/Николай Тарасов.jpg" alt="Николай Тарасов" width="270">
+             <li class="command-people">
+                <picture>
+                    <source srcset="./images/jpeg/nykolai_mobile.jpg 1x, ./images/jpeg/nykolai_mobile2x.jpg 2x" media="(max-width:767px") />
+                    <source srcset="./images/jpeg/nykolai_tablet.jpg 1x, ./images/jpeg/nykolai_tablet2x.jpg 2x" media="(max-width:1199px") />
+                    <source srcset="./images/jpeg/nykolai_dekstop.jpg 1x, ./images/jpeg/nykolai_dekstop2x.jpg 2x" media="(min-width:1200px") />
+                    <img src="./images/jpeg/nykolai_dekstop.jpg" alt="Николай">     
+                </picture>
                 <h3>Николай Тарасов</h3>
                 <p>Marketing</p>
                 <ul class="ul-2">
@@ -176,7 +211,13 @@
                     </li>
                     </ul>
             </li>
-            <li class="command-people"><img src="./images/Михаил ермаков.jpg" alt="Михаил Ермаков" width="270">
+            <li class="command-people">
+                <picture>
+                    <source srcset="./images/jpeg/myko_mobile.jpg 1x, ./images/jpeg/myko_mobile2x.jpg 2x" media="(max-width:767px") />
+                    <source srcset="./images/jpeg/myko_tablet.jpg 1x, ./images/jpeg/myko_tablet2x.jpg 2x" media="(max-width:1199px") />
+                    <source srcset="./images/jpeg/myko_dekstop.jpg 1x, ./images/jpeg/myko_dekstop2x.jpg 2x" media="(min-width:1200px") />
+                    <img src="./images/jpeg/myko_dekstop.jpg" alt="Михаил">     
+                </picture>
                 <h3>Михаил Ермаков</h3>
                 <p>UI Designer</p>
                 <ul class="ul-2">
@@ -312,8 +353,9 @@
             <input type="checkbox" name="checkbox" id="checkbox">
             <span class="checkbox-span"></span>
             Соглашаюсь с рассылкой и принимаю <a href="">Условия договора</a></label>
+            <button>Отправить</button>
         </div>
-        <button>Отправить</button>
+        
         </form>
       
     </div>

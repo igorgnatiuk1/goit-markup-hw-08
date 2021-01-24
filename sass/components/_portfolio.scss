@@ -54,7 +54,7 @@ font-weight: 500;
 font-size: 16px;
 line-height: 1.62;
 background-color:  #F5F4FA;
-color: var(--color-black);
+color: $color-black;
 letter-spacing: 0.03em;
 padding: 6px 22px;
 border-radius: 4px;
@@ -62,13 +62,13 @@ transition-property: color, background-color ;
 transition-duration: 250ms;
 transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 &:hover, &:focus{
-   background-color: var(--color-blue);
-   color: var(--color-wight);
+   background-color: $color-blue;
+   color: $color-wight;
    }
 }
 .button-nav li{
-background-color: var(--color-blue);
-color: var(--color-wight);
+background-color: $color-blue;
+color: $color-wight;
 
 }
 .list-all h3{
@@ -83,7 +83,7 @@ text-align: left;
 font-weight: 400;
 font-size: 16px;
 line-height: 1.87;
-color: var(--color-gray);}
+color: $color-gray;}
 .command{
 margin-bottom: 50px;
 }

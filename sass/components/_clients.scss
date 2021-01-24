@@ -51,8 +51,8 @@
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     &:hover, &:focus{
-        color: var(--color-blue);
-        border: 1px solid var(--color-blue); }
+        color: $color-blue;
+        border: 1px solid $color-blue; }
         &:not(:last-child){
             margin-bottom: 30px;
             @media screen and (min-width: 480px) {
